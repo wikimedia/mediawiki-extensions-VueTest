@@ -23,7 +23,6 @@
 ( function () {
 	var Vue = require( 'vue' ),
 		App = require( 'ext.vueTest.components' ).App,
-		i18n = require( 'ext.vueTest.plugins' ).i18n,
 		api = require( 'ext.vueTest.plugins' ).api;
 
 	/**
@@ -32,7 +31,6 @@
 	 * directory. More information about Vue plugins can be found here:
 	 * https://vuejs.org/v2/guide/plugins.html
 	 */
-	Vue.use( i18n );
 	Vue.use( api );
 
 	// Create the Vue instance

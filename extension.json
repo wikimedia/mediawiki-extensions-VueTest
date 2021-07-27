@@ -49,7 +49,6 @@
 		"ext.vueTest.plugins": {
 			"packageFiles": [
 				"plugins/index.js",
-				"plugins/i18n.js",
 				"plugins/api.js"
 			]
 		},
