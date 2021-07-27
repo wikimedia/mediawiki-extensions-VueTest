@@ -1,15 +1,15 @@
-<!--
-	App.vue
-
-	This is the top-level "App" component in our demo Vue application.
-	This component and all of its children are written in Vue's single-file
-	component format. You can read more about single-file components here:
-	https://vuejs.org/v2/guide/single-file-components.html
-
-	Below is the <template> portion of the component, which defines what gets
-	rendered.
--->
 <template>
+	<!--
+		App.vue
+
+		This is the top-level "App" component in our demo Vue application.
+		This component and all of its children are written in Vue's single-file
+		component format. You can read more about single-file components here:
+		https://vuejs.org/v2/guide/single-file-components.html
+
+		Below is the <template> portion of the component, which defines what gets
+		rendered.
+	-->
 	<div id="app" class="app">
 		<!--
 			The $i18n instance method is defined by a plugin, so it's
@@ -30,7 +30,7 @@
 
 			The text after the colon is the argument passed to the directive.
 		-->
-		<p v-i18n-html:vuetest-app-intro />
+		<p v-i18n-html:vuetest-app-intro></p>
 
 		<!--
 			A second usage of vue-i18n-html is also supported. Uncomment
@@ -47,11 +47,11 @@
 			locally (see below) or globally at the root-level Vue instance
 			before they can be used in templates in this way.
 		-->
-		<two-way-binding-module />
-		<computed-property-module />
-		<api-request-module />
-		<parent-child-communication-module />
-		<language-search-module />
+		<two-way-binding-module></two-way-binding-module>
+		<computed-property-module></computed-property-module>
+		<api-request-module></api-request-module>
+		<parent-child-communication-module></parent-child-communication-module>
+		<language-search-module></language-search-module>
 	</div>
 </template>
 

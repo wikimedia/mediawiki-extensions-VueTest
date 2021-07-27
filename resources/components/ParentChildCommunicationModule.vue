@@ -1,7 +1,7 @@
-<!--
-	Example of communication between parent and child components.
--->
 <template>
+	<!--
+		Example of communication between parent and child components.
+	-->
 	<div id="parent-child-communication-module">
 		<h2>
 			{{ $i18n( 'vuetest-parent-child-communication-title' ) }}
@@ -13,8 +13,8 @@
 
 		<pre>Click count: {{ clickCount }}</pre>
 
-		<child-component message="Hard-coded props" v-on:update-count="updateCount()" />
-		<child-component v-bind:message="dynamicProp" v-on:update-count="updateCount()" />
+		<child-component message="Hard-coded props" @update-count="updateCount"></child-component>
+		<child-component :message="dynamicProp" @update-count="updateCount"></child-component>
 
 		<input v-model="dynamicProp" type="text">
 	</div>

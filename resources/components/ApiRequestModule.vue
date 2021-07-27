@@ -1,9 +1,9 @@
-<!--
-	This component demonstrates how components can make asynchronous API
-	requests to update their internal data. The template will change
-	automatically once new data is present.
--->
 <template>
+	<!--
+		This component demonstrates how components can make asynchronous API
+		requests to update their internal data. The template will change
+		automatically once new data is present.
+	-->
 	<div id="api-request-module">
 		<h2>
 			{{ $i18n( 'vuetest-apirequest-title' ) }}

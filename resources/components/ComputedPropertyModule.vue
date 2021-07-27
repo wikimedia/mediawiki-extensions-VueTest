@@ -1,8 +1,8 @@
-<!--
-	This is a basic example of how Computed Properties work in Vue.
-	More info here: https://vuejs.org/v2/guide/computed.html
--->
 <template>
+	<!--
+		This is a basic example of how Computed Properties work in Vue.
+		More info here: https://vuejs.org/v2/guide/computed.html
+	-->
 	<div id="computed-property-module">
 		<h2>
 			{{ $i18n( 'vuetest-computed-property-title' ) }}

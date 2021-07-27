@@ -1,8 +1,8 @@
-<!--
-	This component demonstrates how to receive props from and emit events to
-	a parent component.
--->
 <template>
+	<!--
+		This component demonstrates how to receive props from and emit events to
+		a parent component.
+	-->
 	<div id="child-component" class="child-component">
 		<span>{{ message }}</span>
 		<button v-on:click="$emit( 'update-count' )">

@@ -8,7 +8,7 @@
 			{{ $i18n( 'vuetest-language-search-intro', numLangs ) }}
 		</p>
 
-		<language-search />
+		<language-search></language-search>
 	</div>
 </template>
 
