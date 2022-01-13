@@ -3,11 +3,9 @@
 		<h2>
 			{{ $i18n( 'vuetest-language-search-title' ) }}
 		</h2>
-
 		<p>
 			{{ $i18n( 'vuetest-language-search-intro', numLangs ) }}
 		</p>
-
 		<language-search></language-search>
 	</div>
 </template>

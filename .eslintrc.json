@@ -1,7 +1,8 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client",
+		"wikimedia/client-common",
+		"wikimedia/vue3-es6",
 		"wikimedia/mediawiki"
 	],
 	"globals": {
@@ -11,13 +12,6 @@
 		"module": false
 	},
 	"rules": {
-		"vue/html-indent": [ "warn", "tab" ],
-		"vue/max-attributes-per-line": [ "warn", {
-			"singleline": 2,
-			"multiline": {
-				"max": 1,
-				"allowFirstLine": true
-			} 
-		} ]
+		"vue/html-indent": [ "warn", "tab" ]
 	}
 }

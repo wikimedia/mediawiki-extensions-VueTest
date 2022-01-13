@@ -16,12 +16,13 @@
 		<child-component message="Hard-coded props" @update-count="updateCount"></child-component>
 		<child-component :message="dynamicProp" @update-count="updateCount"></child-component>
 
-		<input v-model="dynamicProp" type="text">
+		<cdx-text-input v-model="dynamicProp" clearable></cdx-text-input>
 	</div>
 </template>
 
 <script>
-var ChildComponent = require( './ChildComponent.vue' );
+var ChildComponent = require( './ChildComponent.vue' ),
+	codex = require( 'codex' );
 
 module.exports = {
 	name: 'ParentChildCommunicationModule',
@@ -33,7 +34,8 @@ module.exports = {
 	},
 
 	components: {
-		'child-component': ChildComponent
+		'child-component': ChildComponent,
+		CdxTextInput: codex.CdxTextInput
 	},
 
 	methods: {

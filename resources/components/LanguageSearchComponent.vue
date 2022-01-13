@@ -1,47 +1,67 @@
 <template>
 	<div class="mw-language-search">
-		<input
-			v-model="search"
-			type="search"
-			class="mw-language-search-input"
-			v-bind:placeholder="$i18n( 'vuetest-language-search-placeholder' )"
+		<p>
+			Selected language code: {{ selectedLanguageCode || '(none)' }}
+		</p>
+		<cdx-lookup
+			v-model="selectedLanguageCode"
+			v-model:input-value="search"
+			:options="results"
+			:placeholder="$i18n( 'vuetest-language-search-placeholder' )"
+			:start-icon="cdxIconLanguage"
+			clearable
 		>
-		<div class="mw-language-search-results">
-			<div
-				v-for="result in results"
-				v-bind:key="result.code"
-				class="mw-language-search-result"
-			>
+			<template #menu-option="{ option }">
 				<span class="mw-language-search-result-name">
-					{{ result.name }}
+					{{ option.name }}
 				</span>
 				<span class="mw-language-search-result-code">
-					{{ result.code }}
+					{{ option.code }}
 				</span>
-			</div>
-		</div>
+			</template>
+		</cdx-lookup>
 	</div>
 </template>
 
 <script>
-var languageNames = mw.language.getData( mw.config.get( 'wgUserLanguage' ), 'languageNames' ),
+const codex = require( 'codex' ),
+	icons = require( './icons.json' ),
+	languageNames = mw.language.getData( mw.config.get( 'wgUserLanguage' ), 'languageNames' ),
 	languageResults = Object.keys( languageNames ).map( function ( code ) {
 		return { code: code, name: languageNames[ code ] };
 	} );
 
+// @vue/component
 module.exports = {
+	components: {
+		CdxLookup: codex.CdxLookup
+	},
 	data: function () {
 		return {
-			search: ''
+			search: '',
+			selectedLanguageCode: '',
+			cdxIconLanguage: icons.cdxIconLanguage
 		};
 	},
 	computed: {
 		results: function () {
-			var query = this.search.toLowerCase();
-			return languageResults.filter( function ( result ) {
-				return result.code.toLowerCase().substring( 0, query.length ) === query ||
-					result.name.toLowerCase().substring( 0, query.length ) === query;
-			} );
+			const query = this.search.toLowerCase();
+			if ( query === '' ) {
+				return [];
+			}
+			return languageResults
+				.filter( function ( result ) {
+					return result.code.toLowerCase().slice( 0, query.length ) === query ||
+						result.name.toLowerCase().slice( 0, query.length ) === query;
+				} )
+				.map( function ( result ) {
+					return {
+						code: result.code,
+						name: result.name,
+						value: result.code,
+						label: result.name
+					};
+				} );
 		}
 	}
 };
@@ -53,33 +73,9 @@ module.exports = {
 .mw-language-search {
 	width: 500px;
 
-	&-input {
-		display: block;
-		width: 100%;
-		padding: 6px 8px;
-		border: 1px solid @colorGray10;
-		line-height: 18/14em;
-		font-size: inherit;
-		font-family: inherit;
-
-		&:focus {
-			border-color: @colorProgressive;
-		}
-	}
-
-	&-results {
-		padding: 1em;
-		height: 200px;
-		overflow-y: auto;
-	}
-
-	&-result {
-		padding: 0.5em 0;
-
-		&-code {
-			float: right;
-			color: @colorGray7;
-		}
+	&-result-code {
+		float: right;
+		color: @colorGray7;
 	}
 }
 </style>

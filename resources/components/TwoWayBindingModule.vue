@@ -13,13 +13,18 @@
 
 		<pre>{{ input }}</pre>
 
-		<input v-model="input" type="text">
+		<cdx-text-input v-model="input" clearable></cdx-text-input>
 	</div>
 </template>
 
 <script>
+var codex = require( 'codex' );
+
 module.exports = {
 	name: 'TwoWayBindingModule',
+	components: {
+		CdxTextInput: codex.CdxTextInput
+	},
 
 	data: function () {
 		return {
