@@ -52,21 +52,7 @@
 			],
 			"messages": [
 				"vuetest-app-welcome",
-				"vuetest-app-intro",
-				"vuetest-apirequest-title",
-				"vuetest-apirequest-intro",
-				"vuetest-apirequest-button",
-				"vuetest-apirequest-pending",
-				"vuetest-computed-property-title",
-				"vuetest-computed-property-intro",
-				"vuetest-two-way-binding-title",
-				"vuetest-two-way-binding-intro",
-				"vuetest-parent-child-communication-title",
-				"vuetest-parent-child-communication-intro",
-				"vuetest-child-component-button",
-				"vuetest-language-search-title",
-				"vuetest-language-search-intro",
-				"vuetest-language-search-placeholder"
+				"vuetest-app-intro"
 			],
 			"styles": [],
 			"packageFiles": [

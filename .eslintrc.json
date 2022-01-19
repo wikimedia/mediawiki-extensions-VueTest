@@ -9,7 +9,8 @@
 		"mw": false,
 		"OO": false,
 		"require": "readonly",
-		"module": false
+		"module": false,
+		"exports": "writable"
 	},
 	"rules": {
 		"vue/html-indent": [ "warn", "tab" ]

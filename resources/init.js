@@ -21,13 +21,13 @@
  * https://vuejs.org/v2/guide/render-function.html
  */
 ( function () {
-	const Vue = require( 'vue' );
-	const App = require( 'ext.vueTest.components' ).App;
+	var Vue = require( 'vue' );
+	var App = require( 'ext.vueTest.components' ).App;
 
 	Vue.configureCompat( {
 		MODE: 3
 	} );
 
 	Vue.createMwApp( App )
-		.mount('#vue-root');
+		.mount( '#vue-root' );
 }() );

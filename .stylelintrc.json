@@ -1,4 +1,7 @@
 {
+	"processors": [
+		"@mapbox/stylelint-processor-arbitrary-tags"
+	],
 	"extends": "stylelint-config-wikimedia",
 	"ignoreFiles": [
 		"node_modules/**/*.css",
