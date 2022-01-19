@@ -1,98 +1,183 @@
 <template>
-	<!--
-		App.vue
+	<div>
+		<header>
+			<h1>Codex Demo</h1>
+		</header>
 
-		This is the top-level "App" component in our demo Vue application.
-		This component and all of its children are written in Vue's single-file
-		component format. You can read more about single-file components here:
-		https://vuejs.org/v2/guide/single-file-components.html
+		<main class="sandbox-main">
+			<h2>Select</h2>
+			<cdx-select
+				v-model="selection"
+				:options="options"
+				default-label="Choose an option"
+			></cdx-select>
+			<p>Selected value: {{ selection || '(none)' }}</p>
 
-		Below is the <template> portion of the component, which defines what gets
-		rendered.
-	-->
-	<div id="app" class="app">
-		<!--
-			The $i18n instance method is defined by a plugin, so it's
-			available in all components. Calling it with the appropriate key
-			returns a mw.message object. This can be output directly into a
-			template inside curly brackets.
-		-->
-		<h1>{{ $i18n( 'vuetest-app-welcome') }}</h1>
+			<h2>Radios</h2>
+			<cdx-radio
+				v-for="option in options"
+				:key="option.value"
+				v-model="selection"
+				:input-value="option.value"
+			>
+				{{ option.label }}
+			</cdx-radio>
+			<p>Selected value: {{ selection || '(none)' }}</p>
 
-		<!--
-			The same plugin also defines a custom directive, v-i18n-html.
-			Vue includes some built-in directives like v-if, v-else, v-for, etc.
-			This custom directive will automatically output the desired message
-			as HTML inside of the element it is attached to. This is
-			equivalent to (and more concise than) writing:
+			<h2>Text input</h2>
+			Selected value: <cdx-text-input v-model="selection" clearable></cdx-text-input>
 
-			<p v-html="$i18n( 'vuetest-app-welcome' ).parse()" />
+			<h2>Checkboxes</h2>
+			<cdx-checkbox
+				v-for="option in options"
+				:key="option.value"
+				v-model="multiSelection"
+				:input-value="option.value"
+			>
+				{{ option.label }}
+			</cdx-checkbox>
+			<p>Selected values: {{ multiSelection.join( ', ' ) || '(none)' }}</p>
 
-			The text after the colon is the argument passed to the directive.
-		-->
-		<p v-i18n-html:vuetest-app-intro></p>
+			<h2>Icons</h2>
+			<p dir="rtl">
+				<cdx-icon :icon="icons.cdxIconArrowNext"></cdx-icon> next
+			</p>
+			<p lang="nl" dir="ltr">
+				<cdx-icon :icon="icons.cdxIconBold"></cdx-icon> Bold
+			</p>
 
-		<!--
-			A second usage of vue-i18n-html is also supported. Uncomment
-			below to see in action. One caveat is that Vue interprets
-			everything inside the attribute quotes as a JS expression, so
-			if you're passing in a string value this way as opposed to a
-			number or a variable you will need to wrap in an additional set
-			of quotes.
-		-->
-		<!-- <p v-i18n-html="'vuetest-app-intro'" /> -->
+            <h2>Button Variants</h2>
 
-		<!--
-			Child Components. Components must be registered either
-			locally (see below) or globally at the root-level Vue instance
-			before they can be used in templates in this way.
-		-->
-		<two-way-binding-module></two-way-binding-module>
-		<computed-property-module></computed-property-module>
-		<api-request-module></api-request-module>
-		<parent-child-communication-module></parent-child-communication-module>
-		<language-search-module></language-search-module>
+            <h3>Normal</h3>
+            <p>
+                <cdx-button>
+                    Default Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button action="progressive">
+                    Progressive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button action="destructive">
+                    Destructive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button disabled>
+                    Disabled Button
+                </cdx-button>
+            </p>
+
+
+            <h3>Primary</h3>
+            <p>
+                <cdx-button type="primary">
+                    Primary Default Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="primary" action="progressive">
+                    Primary Progressive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="primary" action="destructive">
+                    Primary Destructive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="primary" disabled>
+                    Primary Disabled Button
+                </cdx-button>
+            </p>
+
+            <h3>Quiet</h3>
+            <p>
+                <cdx-button type="quiet">
+                    Quiet Default Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="quiet" action="progressive">
+                    Quiet Progressive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="quiet" action="destructive">
+                    Quiet Destructive Button
+                </cdx-button>
+            </p>
+
+            <p>
+                <cdx-button type="quiet" disabled>
+                    Quiet Disabled Button
+                </cdx-button>
+            </p>
+		</main>
+
 	</div>
 </template>
 
-<!--
-	The <script> portion of the component is where all of the data and
-	methods live. This component has no data or methods of its own, only
-	a series of child components.
--->
 <script>
-var ApiRequestModule = require( './ApiRequestModule.vue' ),
-	ComputedPropertyModule = require( './ComputedPropertyModule.vue' ),
-	TwoWayBindingModule = require( './TwoWayBindingModule.vue' ),
-	ParentChildCommunicationModule = require( './ParentChildCommunicationModule.vue' ),
-	LanguageSearchModule = require( './LanguageSearchModule.vue' );
+
+const Vue = require( 'vue' );
+const Codex = require( 'codex' );
+const icons = require( './icons.json' )
+
+const options = [
+	{ label: 'Apple', value: 'a' },
+	{ label: 'Banana', value: 'b' },
+	{ label: 'Canteloupe', value: 'c' }
+];
+
 
 module.exports = {
-	name: 'App',
-	components: {
-		'api-request-module': ApiRequestModule,
-		'computed-property-module': ComputedPropertyModule,
-		'two-way-binding-module': TwoWayBindingModule,
-		'parent-child-communication-module': ParentChildCommunicationModule,
-		'language-search-module': LanguageSearchModule
-	}
+    name: 'App',
+    components: {
+        CdxButton: Codex.CdxButton,
+        CdxCheckbox: Codex.CdxCheckbox,
+        CdxCombobox: Codex.CdxCombobox,
+        CdxIcon: Codex.CdxIcon,
+        CdxRadio: Codex.CdxRadio,
+        CdxSelect: Codex.CdxSelect,
+        CdxTextInput: Codex.CdxTextInput
+    },
+
+    data () {
+        return {
+            selection: '',
+            multiSelection: [],
+            options,
+            icons
+        }
+    },
+
+    methods: {
+        onClick () {
+            console.log( 'Clicked' );
+        }
+    }
 };
+
 </script>
 
-<!--
-	Components can optionally include <style> tags. Uncomment the code below
-	to see one in action.
+<style>
+.sandbox-main {
+	max-width: 500px;
+}
 
-	NOTE: scoped styles are not currently supported in ResourceLoader. LESS
-	compilation is, however.
--->
-<!--
-<style lang="less">
-@background-color: #ccc;
-
-.app {
-	background-color: @background-color;
-	padding: 1em;
+td {
+	/* stylelint-disable-next-line unit-disallowed-list */
+	padding: 1.5rem;
 }
 </style>
--->

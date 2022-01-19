@@ -36,7 +36,6 @@
 		"ext.vueTest": {
 			"dependencies": [
 				"ext.vueTest.components",
-				"ext.vueTest.plugins",
 				"vue",
 				"mediawiki.api"
 			],
@@ -44,12 +43,6 @@
 			"styles": [],
 			"scripts": [
 				"init.js"
-			]
-		},
-		"ext.vueTest.plugins": {
-			"packageFiles": [
-				"plugins/index.js",
-				"plugins/api.js"
 			]
 		},
 		"ext.vueTest.components": {
@@ -79,18 +72,13 @@
 			"packageFiles": [
 				"components/index.js",
 				"components/App.vue",
-				"components/ApiRequestModule.vue",
-				"components/ComputedPropertyModule.vue",
-				"components/TwoWayBindingModule.vue",
-				"components/ParentChildCommunicationModule.vue",
-				"components/ChildComponent.vue",
-				"components/LanguageSearchModule.vue",
-				"components/LanguageSearchComponent.vue",
 				{
 					"name": "components/icons.json",
 					"callback": "ResourceLoaderCodexModule::getIcons",
 					"callbackParam": [
-						"cdxIconLanguage"
+						"cdxIconArrowNext",
+						"cdxIconBold",
+						"cdxIconTrash"
 					]
 				}
 			]
