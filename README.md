@@ -10,10 +10,12 @@ Download this extension into the `extensions` directory of your local
 MediaWiki instance. Make sure that you've also checked out this patch in MW
 Core:
 
-https://gerrit.wikimedia.org/r/c/mediawiki/core/+/569692/
+https://gerrit.wikimedia.org/r/c/mediawiki/core/+/753858
 
-Running `npm install` in this extension's directory will install all
-development dependencies.
+All Vue.js code is meant to be handled by ResourceLoader at runtime, so
+running `npm install` is not necessary. However, there are a number of
+`devDependencies` specified in `package.json` that may be useful for
+development and testing.
 
 Once set up, running `npm test` and `composer test` will run automated code checks.
 
@@ -21,19 +23,18 @@ Once set up, running `npm test` and `composer test` will run automated code chec
 
 This extension adds a new special page, `Special:VueTest`. This page contains
 several interactive demos to showcase some of what you can do with Vue, as well as
-how this tool can be integrated in a MediaWiki envirionment. Most source
-files are annotated and contain links to the relevant areas of the [Vue.js documentation][1].
+how this tool can be integrated in a MediaWiki envirionment.
 
 ### Currently supported:
 
 * Single-file Vue components using ES5 (plus require/module.exports)
+* ES6 in component files (except for `import` and `export`)
+* Use of the new [Codex](https://doc.wikimedia.org/codex/main/) component library
 * Linting JS, CSS/LESS, and HTML in .vue files
 * Less compilation in component style blocks
 * CSS Janus works (try uselang=ar to see it in action)
 * Vue.js Devtools (use debug=true or set $wgVueDevelopmentMode = true in config
-* mw.message and mw.api functionality is provided via plugins (see `resources/plugins` )
-* Unit testing of JS and Vue files via Jest ( `npm run test:unit` to run ); Vue components are
-  included in coverage report
+* mw.message and mw.api functionality is provided via the `createMwApp` wrapper
 
 ### Not currently supported:
 
