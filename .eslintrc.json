@@ -1,7 +1,7 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-common",
+		"wikimedia/client-es6",
 		"wikimedia/vue3-es6",
 		"wikimedia/mediawiki"
 	],
@@ -14,5 +14,13 @@
 	},
 	"rules": {
 		"vue/html-indent": [ "warn", "tab" ]
-	}
+	},
+	"overrides": [
+		{
+			"files": [ "**/*.test.js" ],
+			"env": {
+				"jest": true
+			}
+		}
+	]
 }

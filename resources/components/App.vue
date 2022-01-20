@@ -172,4 +172,4 @@ module.exports = exports = {
 .sandbox-main {
 	max-width: 500px;
 }
-</style>"
+</style>

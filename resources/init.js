@@ -1,6 +1,6 @@
 ( function () {
-	var Vue = require( 'vue' );
-	var App = require( 'ext.vueTest.components' ).App;
+	const Vue = require( 'vue' );
+	const App = require( 'ext.vueTest.components' ).App;
 
 	Vue.configureCompat( {
 		MODE: 3
