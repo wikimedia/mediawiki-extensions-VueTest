@@ -7,10 +7,11 @@ extension.
 ## Installation
 
 Download this extension into the `extensions` directory of your local
-MediaWiki instance. Make sure that you've also checked out this patch in MW
-Core:
+MediaWiki instance. Then enable it in `LocalSettings.php` by adding:
 
-https://gerrit.wikimedia.org/r/c/mediawiki/core/+/753858
+```php
+wfLoadExtension( 'VueTest' );
+```
 
 All Vue.js code is meant to be handled by ResourceLoader at runtime, so
 running `npm install` is not necessary. However, there are a number of

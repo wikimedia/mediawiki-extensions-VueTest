@@ -135,7 +135,22 @@
 </template>
 
 <script>
-const Codex = require( 'codex' );
+// Codex is available from ResourceLoader at runtime
+// and is available without needing a build step.
+const {
+	CdxButton,
+	CdxCheckbox,
+	CdxIcon,
+	CdxRadio,
+	CdxSelect,
+	CdxTextInput
+} = require( 'codex' );
+
+// Codex Icons are also available from ResourceLoader.
+// To avoid loading all of them, you will probably want
+// to use a RL callback so that only the specified icons
+// are delivered; see this project's extension.json file
+// for an example.
 const icons = require( './icons.json' );
 
 const options = [
@@ -148,12 +163,12 @@ const options = [
 module.exports = exports = {
 	name: 'App',
 	components: {
-		CdxButton: Codex.CdxButton,
-		CdxCheckbox: Codex.CdxCheckbox,
-		CdxIcon: Codex.CdxIcon,
-		CdxRadio: Codex.CdxRadio,
-		CdxSelect: Codex.CdxSelect,
-		CdxTextInput: Codex.CdxTextInput
+		CdxButton,
+		CdxCheckbox,
+		CdxIcon,
+		CdxRadio,
+		CdxSelect,
+		CdxTextInput
 	},
 
 	data() {
