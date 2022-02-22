@@ -48,7 +48,7 @@
 		"ext.vueTest.components": {
 			"dependencies": [
 				"mediawiki.language.names",
-				"codex"
+				"@wikimedia/codex"
 			],
 			"messages": [
 				"vuetest-app-welcome",

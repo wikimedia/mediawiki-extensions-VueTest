@@ -144,7 +144,7 @@ const {
 	CdxRadio,
 	CdxSelect,
 	CdxTextInput
-} = require( 'codex' );
+} = require( '@wikimedia/codex' );
 
 // Codex Icons are also available from ResourceLoader.
 // To avoid loading all of them, you will probably want
