@@ -43,7 +43,8 @@
 			"styles": [],
 			"scripts": [
 				"init.js"
-			]
+			],
+			"es6": true
 		},
 		"ext.vueTest.components": {
 			"dependencies": [
@@ -70,6 +71,5 @@
 			]
 		}
 	},
-	"manifest_version": 2,
-	"es6": true
+	"manifest_version": 2
 }

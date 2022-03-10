@@ -6,10 +6,11 @@
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.16.11",
-		"@vue/compat": "3.2.23",
-		"@vue/compiler-sfc": "3.2.23",
+		"@vue/compat": "^3.2.27",
+		"@vue/compiler-sfc": "^3.2.27",
 		"@vue/test-utils": "2.0.0-rc.18",
 		"@vue/vue3-jest": "27.0.0-alpha.4",
+		"@wikimedia/codex": "^0.1.0-alpha.4",
 		"eslint": "^7.32.0",
 		"eslint-config-wikimedia": "^0.21.0",
 		"eslint-plugin-compat": "^4.0.1",
@@ -22,6 +23,6 @@
 		"jquery": "^3.6.0",
 		"stylelint": "^13.0.0",
 		"stylelint-config-wikimedia": "0.11.1",
-		"vue": "3.2.23"
+		"vue": "^3.2.27"
 	}
 }
