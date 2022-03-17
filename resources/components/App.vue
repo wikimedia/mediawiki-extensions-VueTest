@@ -9,7 +9,7 @@
 			<h2>Select</h2>
 			<cdx-select
 				v-model="selection"
-				:options="options"
+				:menu-items="options"
 				default-label="Choose an option"
 			></cdx-select>
 			<p>Selected value: {{ selection || '(none)' }}</p>
