@@ -64,7 +64,9 @@
 					"callbackParam": [
 						"cdxIconArrowNext",
 						"cdxIconBold",
-						"cdxIconTrash"
+						"cdxIconTrash",
+						"cdxIconPause",
+						"cdxIconPlay"
 					]
 				}
 			]
