@@ -9,7 +9,7 @@
 				<cdx-tab name="combobox">
 					<h2>Combobox</h2>
 					<cdx-combobox
-						v-model="selection"
+						v-model:selected="selection"
 						:menu-items="options"
 						placeholder="Type or choose an option"
 						:disabled="false"
@@ -21,7 +21,7 @@
 				<cdx-tab name="select">
 					<h2>Select</h2>
 					<cdx-select
-						v-model="selection"
+						v-model:selected="selection"
 						:menu-items="options"
 						default-label="Choose an option"
 					></cdx-select>
@@ -35,6 +35,7 @@
 						:key="option.value"
 						v-model="selection"
 						:input-value="option.value"
+						name="vuetest-radios"
 					>
 						{{ option.label }}
 					</cdx-radio>
@@ -53,6 +54,7 @@
 						:key="option.value"
 						v-model="multiSelection"
 						:input-value="option.value"
+						name="vuetest-checkboxes"
 					>
 						{{ option.label }}
 					</cdx-checkbox>
