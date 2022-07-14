@@ -1,7 +1,7 @@
 # Mediawiki Vue.js Sandbox
 
 This dummy extension template is intended to demonstrate how Vue.js can be
-used within a MediaWiki envirionment. It is based on the Boilerplate
+used within a MediaWiki environment. It is based on the Boilerplate
 extension.
 
 ## Installation
