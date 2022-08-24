@@ -26,16 +26,23 @@ class SpecialVueTest extends \SpecialPage {
 	 */
 	public function execute( $sub ) {
 		$out = $this->getOutput();
+
+		if ( $sub === 'codex' ) {
+			$out->setPageTitle( $this->msg( 'vuetest-codex-title' ) );
+			$out->addSubtitle( '&lt; ' . $this->getLinkRenderer()->makeLink( $this->getPageTitle() ) );
+			$out->addModules( 'ext.vueTest.codexdemo' );
+		} else {
+			$out->setPageTitle( $this->msg( 'vuetest' ) );
+			$out->addSubtitle( $this->msg( 'vuetest-summary' )->escaped() );
+			$out->addModules( 'ext.vueTest' );
+		}
+
 		$markup = <<<EOM
 		<div id="vue-root">
 			<p>This message will disappear once Vue.js initializes.</p>
 		</div>
 EOM;
-
-		$out->setPageTitle( $this->msg( 'vuetest' ) );
-		$out->addSubtitle( $this->msg( 'vuetest-summary' ) );
 		$out->addHTML( $markup );
-		$out->addModules( 'ext.vueTest' );
 	}
 
 	// phpcs:ignore

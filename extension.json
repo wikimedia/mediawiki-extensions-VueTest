@@ -52,7 +52,8 @@
 			],
 			"messages": [
 				"vuetest-app-welcome",
-				"vuetest-app-intro"
+				"vuetest-app-intro",
+				"vuetest-app-see-also"
 			],
 			"styles": [],
 			"packageFiles": [
@@ -60,10 +61,51 @@
 				"components/App.vue",
 				{
 					"name": "components/icons.json",
-					"callback": "ResourceLoaderCodexModule::getIcons",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconAdd"
+					]
+				}
+			]
+		},
+		"ext.vueTest.codexdemo": {
+			"dependencies": [
+				"vue",
+				"@wikimedia/codex"
+			],
+			"localBasePath": "resources/codex-demos",
+			"remoteExtPath": "VueTest/resources/codex-demos",
+			"packageFiles": [
+				"init.js",
+				"ButtonDemo.vue",
+				"ButtonGroupDemo.vue",
+				"CardDemo.vue",
+				"CheckboxDemo.vue",
+				"ComboboxDemo.vue",
+				"IconDemo.vue",
+				"lookup-examples.json",
+				"LookupDemo.vue",
+				"MenuDemo.vue",
+				"MenuItemDemo.vue",
+				"MessageDemo.vue",
+				"ProgressBarDemo.vue",
+				"RadioDemo.vue",
+				"Sandbox.vue",
+				"SearchInputDemo.vue",
+				"SelectDemo.vue",
+				"TabsDemo.vue",
+				"TextInputDemo.vue",
+				"ThumbnailDemo.vue",
+				"ToggleButtonGroupDemo.vue",
+				"ToggleDemo.vue",
+				"TypeaheadSearchDemo.vue",
+				{
+					"name": "icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
 					"callbackParam": [
 						"cdxIconArrowNext",
 						"cdxIconBold",
+						"cdxIconRobot",
 						"cdxIconTrash",
 						"cdxIconPause",
 						"cdxIconPlay"
