@@ -7,7 +7,7 @@
 
 namespace MediaWiki\Extension\VueTest;
 
-class SpecialVueSandbox extends \SpecialPage {
+class SpecialVueTest extends \SpecialPage {
 
 	/**
 	 * Initialize the special page.
