@@ -21,7 +21,6 @@
 		"grunt-eslint": "^23.0.0",
 		"grunt-stylelint": "0.17.0",
 		"jest": "^27.4.7",
-		"jquery": "^3.6.0",
 		"stylelint": "^14.0.0",
 		"stylelint-config-wikimedia": "0.13.1",
 		"vue": "^3.2.27"

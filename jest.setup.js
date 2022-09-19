@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 // Assign things to "global" here if you want them to be globally available during tests
-global.$ = require( 'jquery' );
 global.mockLocalStorage = {};
 
 // Mock MW object
