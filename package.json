@@ -3,7 +3,11 @@
 	"scripts": {
 		"test": "grunt test && npm run test:unit",
 		"test:unit": "jest",
-		"coverage": "npm run test:unit"
+		"coverage": "npm run test:unit",
+		"codex:build-demos": "cd lib/codex && npm install && npm run build-demos -w codex-docs && cd ../.. && npm run codex:copy-demos",
+		"codex:copy-demos": "npm run codex:copy-demos-js && npm run codex:copy-demos-css",
+		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.cjs.js resources/codex-demos/codex-demos.cjs.js",
+		"codex:copy-demos-css": "cp lib/codex/packages/codex-docs/dist/style.css resources/codex-demos/style.css"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.16.11",
