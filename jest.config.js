@@ -16,6 +16,8 @@ module.exports = {
         '.*\\.(vue)$': '<rootDir>/node_modules/@vue/vue3-jest'
     },
 
+    modulePathIgnorePatterns: ["<rootDir>/lib/"],
+
     testEnvironment: 'jsdom',
     // Indicates whether the coverage information should be collected while executing the test
     collectCoverage: true,
@@ -34,7 +36,8 @@ module.exports = {
         'resources/vendor/',
         'resources/lib/ace/',
         'resources/lib/vue-router/',
-        'resources/ext.wikilambda.edit/components/base/'
+        'resources/ext.wikilambda.edit/components/base/',
+        '/lib/codex/'
     ],
     // The paths to modules that run some code to configure or set up the testing environment before each test
     setupFiles: [

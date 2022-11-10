@@ -26,6 +26,25 @@ This extension adds a new special page, `Special:VueTest`. This page contains
 several interactive demos to showcase some of what you can do with Vue, as well as
 how this tool can be integrated in a MediaWiki envirionment.
 
+## Codex Demos
+
+This extension also includes the Codex repository as a submodule dependency.
+On an older version of Git, you must provide explicit instructions to download
+the submodule dependency:
+
+```
+git submodule update --init --recursive
+```
+
+Newer versions of Git will do this automatically.
+
+### Updating Codex Demos
+
+To update the bundled JS and CSS for the Codex component demos, follow these steps:
+
+1. Update the Codex submodule: `git submodule update --remote --merge`
+2. Run the build script: `npm run codex:build-demos`
+
 ### Currently supported:
 
 * Single-file Vue components using ES5 (plus require/module.exports)

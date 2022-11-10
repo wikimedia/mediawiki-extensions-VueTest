@@ -71,35 +71,15 @@
 		},
 		"ext.vueTest.codexdemo": {
 			"dependencies": [
-				"vue",
-				"@wikimedia/codex"
+				"vue"
 			],
 			"localBasePath": "resources/codex-demos",
 			"remoteExtPath": "VueTest/resources/codex-demos",
+			"styles": [ "style.css" ],
 			"packageFiles": [
 				"init.js",
-				"ButtonDemo.vue",
-				"ButtonGroupDemo.vue",
-				"CardDemo.vue",
-				"CheckboxDemo.vue",
-				"ComboboxDemo.vue",
-				"IconDemo.vue",
-				"lookup-examples.json",
-				"LookupDemo.vue",
-				"MenuDemo.vue",
-				"MenuItemDemo.vue",
-				"MessageDemo.vue",
-				"ProgressBarDemo.vue",
-				"RadioDemo.vue",
 				"Sandbox.vue",
-				"SearchInputDemo.vue",
-				"SelectDemo.vue",
-				"TabsDemo.vue",
-				"TextInputDemo.vue",
-				"ThumbnailDemo.vue",
-				"ToggleButtonGroupDemo.vue",
-				"ToggleDemo.vue",
-				"TypeaheadSearchDemo.vue",
+				"codex-demos.cjs.js",
 				{
 					"name": "icons.json",
 					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
