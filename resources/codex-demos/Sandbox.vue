@@ -331,6 +331,7 @@ const demoSections = [
 	{ name: 'Card', id: '#cdx-card' },
 	{ name: 'CheckBox', id: '#cdx-checkbox' },
 	{ name: 'Combobox', id: '#cdx-combobox' },
+	{ name: 'Dialog', id: '#cdx-dialog' },
 	{ name: 'Icon', id: '#cdx-icon' },
 	{ name: 'Lookup', id: '#cdx-lookup' },
 	{ name: 'Menu', id: '#cdx-menu' },
