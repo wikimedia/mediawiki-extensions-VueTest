@@ -76,6 +76,7 @@
 			"localBasePath": "resources/codex-demos",
 			"remoteExtPath": "VueTest/resources/codex-demos",
 			"styles": [ "style.css" ],
+			"noflip": true,
 			"packageFiles": [
 				"init.js",
 				"Sandbox.vue",
