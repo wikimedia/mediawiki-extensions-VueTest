@@ -5,10 +5,6 @@
 		:dir="dir"
 		class="cdx-sandbox"
 	>
-		<header class="cdx-sandbox__header">
-			<h1>Codex Demo Sandbox</h1>
-		</header>
-
 		<div class="cdx-sandbox__body">
 			<main class="cdx-sandbox__content">
 				<section id="cdx-button">
@@ -517,16 +513,30 @@ html {
 
 		section {
 			margin-bottom: @spacing-xx-large;
+			padding-bottom: @spacing-xx-large;
+			border-bottom: @border-base;
 
 			h2 {
 				margin-top: 0;
 				border-bottom: 0;
+			}
+
+			h3 {
+				margin-bottom: 0.25em;
+			}
+
+			// Add some space between demos for the same component.
+			h3:not( :first-child ) {
+				margin-top: 1em;
 			}
 		}
 	}
 
 	&__content {
 		flex: 1;
+		// Default min-width of a flex item is `auto`, which is making it take up too much space.
+		// Change to 0 instead, which will make it fit within the container along with the nav.
+		min-width: 0;
 	}
 
 	&__nav {
@@ -535,8 +545,9 @@ html {
 		margin-bottom: @spacing-xx-large;
 
 		@media ( min-width: @sandbox-breakpoint-tablet ) {
-			flex: 0 0 @sandbox-sidebar-width;
+			flex: 0 0 auto;
 			flex-direction: row;
+			padding-right: 3em;
 		}
 
 		&__inner {
