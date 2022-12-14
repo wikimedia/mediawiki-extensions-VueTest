@@ -44,7 +44,11 @@
 			"scripts": [
 				"init.js"
 			],
-			"es6": true
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		},
 		"ext.vueTest.components": {
 			"dependencies": [
@@ -67,7 +71,11 @@
 					]
 				}
 			],
-			"es6": true
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		},
 		"ext.vueTest.codexdemo": {
 			"dependencies": [
@@ -93,7 +101,11 @@
 					]
 				}
 			],
-			"es6": true
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		}
 	},
 	"manifest_version": 2
