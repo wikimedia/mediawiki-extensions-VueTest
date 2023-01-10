@@ -247,7 +247,7 @@
 					</div>
 				</section>
 
-				<section id="cdx-toggle">
+				<section id="cdx-toggle-button">
 					<h2>Toggle buttons</h2>
 					<div>
 						<h3>Single toggle button</h3>
@@ -333,14 +333,13 @@ const demoSections = [
 	{ name: 'Menu', id: '#cdx-menu' },
 	{ name: 'MenuItem', id: '#cdx-menu-item' },
 	{ name: 'Message', id: '#cdx-message' },
-	{ name: 'ProgressBar', id: '#cdx-progress-bar' },
 	{ name: 'Radio', id: '#cdx-radio' },
 	{ name: 'SearchInput', id: '#cdx-search-input' },
 	{ name: 'Select', id: '#cdx-select' },
 	{ name: 'Tabs', id: '#cdx-tabs' },
 	{ name: 'TextInput', id: '#cdx-text-input' },
 	{ name: 'Thumbnail', id: '#cdx-thumbnail' },
-	{ name: 'Toggle', id: '#cdx-toggle' },
+	{ name: 'ToggleButton', id: '#cdx-toggle-button' },
 	{ name: 'ToggleButtonGroup', id: '#cdx-toggle-button-group' },
 	{ name: 'TypeaheadSearch', id: '#cdx-typeahead-search' }
 ];
