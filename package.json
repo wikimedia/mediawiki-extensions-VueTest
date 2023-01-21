@@ -4,10 +4,10 @@
 		"test": "grunt test && npm run test:unit",
 		"test:unit": "jest",
 		"coverage": "npm run test:unit",
-		"codex:build-demos": "cd lib/codex && npm install && npm run build-demos -w codex-docs && cd ../.. && npm run codex:copy-demos",
+		"codex:build-demos": "cd lib/codex && npm install && npm run doc && cd ../.. && npm run codex:copy-demos",
 		"codex:copy-demos": "npm run codex:copy-demos-js && npm run codex:copy-demos-css",
-		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.cjs.js resources/codex-demos/codex-demos.cjs.js",
-		"codex:copy-demos-css": "cp lib/codex/packages/codex-docs/dist/style.css resources/codex-demos/style.css"
+		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.umd.js resources/codex-demos/codex-demos.umd.js",
+		"codex:copy-demos-css": "copyfiles -f lib/codex/packages/codex-docs/dist/codex-demos*.css resources/codex-demos"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.16.11",
@@ -16,6 +16,7 @@
 		"@vue/test-utils": "^2.0.0",
 		"@vue/vue3-jest": "27.0.0-alpha.4",
 		"@wikimedia/codex": "0.2.2",
+		"copyfiles": "^2.4.1",
 		"eslint": "^7.32.0",
 		"eslint-config-wikimedia": "^0.21.0",
 		"eslint-plugin-compat": "^4.0.1",
