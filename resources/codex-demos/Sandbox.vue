@@ -320,7 +320,7 @@
 </template>
 
 <script>
-const Demos = require( './codex-demos.umd.js' );
+const Demos = require( './codex-demos.cjs.js' );
 const demoSections = [
 	{ name: 'Button', id: '#cdx-button' },
 	{ name: 'ButtonGroup', id: '#cdx-button-group' },

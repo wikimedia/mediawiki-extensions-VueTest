@@ -6,5 +6,5 @@
 /node_modules/
 jest.config.js
 /resources/components/icons.json
-/resources/codex-demos/codex-demos.*.js
+/resources/codex-demos/codex-demos.cjs.js
 /lib/codex/

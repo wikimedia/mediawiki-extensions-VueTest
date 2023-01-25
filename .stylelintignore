@@ -2,5 +2,5 @@
 /node_modules/
 /vendor/
 /coverage/
-/resources/codex-demos/codex-demos.*.css
+/resources/codex-demos/style.css
 /lib/codex/
