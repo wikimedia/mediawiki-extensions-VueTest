@@ -75,17 +75,13 @@
 			]
 		},
 		"ext.vueTest.codexdemo": {
-			"dependencies": [
-				"vue"
-			],
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
 			"localBasePath": "resources/codex-demos",
 			"remoteExtPath": "VueTest/resources/codex-demos",
-			"styles": [ "style.css" ],
-			"noflip": true,
 			"packageFiles": [
 				"init.js",
 				"Sandbox.vue",
-				"codex-demos.cjs.js",
+				"codex-demos.umd.js",
 				{
 					"name": "icons.json",
 					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
@@ -98,6 +94,20 @@
 						"cdxIconPlay"
 					]
 				}
+			],
+			"themeStyles": {
+				"wikimedia-ui": {
+					"ltr": "codex-demos.style.css",
+					"rtl": "codex-demos.style-rtl.css"
+				},
+				"wikimedia-ui-legacy": {
+					"ltr": "codex-demos.style-legacy.css",
+					"rtl": "codex-demos.style-legacy-rtl.css"
+				}
+			},
+			"noflip": true,
+			"dependencies": [
+				"vue"
 			],
 			"es6": true,
 			"targets": [
