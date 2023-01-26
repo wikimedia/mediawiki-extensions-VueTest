@@ -453,21 +453,17 @@ module.exports = {
 </script>
 
 <style lang="less">
-// TODO import Codex tokens, not available in NPM yet
-@spacing-large: 1em;
-@spacing-xx-large: 2em;
-@font-family-base: sans-serif;
-@background-color-base: #fff;
-@border-base: 1px solid #a2a9b1;
-@line-height-100: 1.6;
-@z-index-1: 1;
+@import ( reference ) '../../../../resources/lib/codex-design-tokens/theme-wikimedia-ui.less';
+// TODO: Improve that import path.
+
+@border-base: @border-width-base @border-style-base @border-color-base;
 
 // Define some sandbox-specific values
 @sandbox-breakpoint-tablet: 768px;
 @sandbox-header-height: 2em;
 @sandbox-sidebar-width: 20rem;
 
-@sandbox-scroll-padding: @sandbox-header-height + ( @spacing-large *2 ) + @spacing-large;
+@sandbox-scroll-padding: calc( ( @spacing-100 * 2 ) + @sandbox-header-height );
 
 html {
 	scroll-behavior: smooth;
@@ -486,10 +482,10 @@ html {
 		justify-content: space-between;
 		position: sticky;
 		top: 0;
-		z-index: @z-index-1;
+		z-index: @z-index-base;
 		height: @sandbox-header-height;
 		border-bottom: @border-base;
-		padding: @spacing-large;
+		padding: @spacing-100;
 
 		h1 {
 			display: inline-flex;
@@ -504,15 +500,15 @@ html {
 		flex: 1;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: @spacing-large;
+		padding: @spacing-100;
 
 		@media ( min-width: @sandbox-breakpoint-tablet ) {
 			flex-direction: row;
 		}
 
 		section {
-			margin-bottom: @spacing-xx-large;
-			padding-bottom: @spacing-xx-large;
+			margin-bottom: @spacing-200;
+			padding-bottom: @spacing-200;
 			border-bottom: @border-base;
 
 			h2 {
@@ -541,12 +537,17 @@ html {
 	&__nav {
 		flex: 1;
 		order: -1;
-		margin-bottom: @spacing-xx-large;
+		margin-bottom: @spacing-200;
 
 		@media ( min-width: @sandbox-breakpoint-tablet ) {
 			flex: 0 0 auto;
 			flex-direction: row;
-			padding-right: 3em;
+			padding-right: @spacing-200;
+
+			[ dir='rtl' ] & {
+				padding-right: 0;
+				padding-left: @spacing-200;
+			}
 		}
 
 		&__inner {
@@ -557,7 +558,7 @@ html {
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				line-height: @line-height-100;
+				line-height: @line-height-medium;
 			}
 		}
 	}
