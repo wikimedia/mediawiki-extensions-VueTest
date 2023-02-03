@@ -14,9 +14,6 @@
 		"MediaWiki\\Extension\\VueTest\\": "includes/"
 	},
 	"config": {},
-	"Hooks": {
-		"BeforePageDisplay": "MediaWiki\\Extension\\VueTest\\Hooks::onBeforePageDisplay"
-	},
 	"MessagesDirs": {
 		"VueTest": [
 			"i18n"
