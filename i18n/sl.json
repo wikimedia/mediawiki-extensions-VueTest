@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"vuetest": "Peskovnik Vue.js",
+	"vuetest-desc": "Peskovnik Vue.js",
+	"vuetest-summary": "Kraj za preizkušanje komponent Vue.js in integracije z MediaWikijem",
+	"vuetest-codex-title": "Peskovnik Codex",
+	"vuetest-app-welcome": "Pozdravljeni od Vue!",
+	"vuetest-app-intro": "Spodaj je vrsta primerov, ki prikazujejo, kako je mogoče Vue.js uporabljati v MediaWikiju. Izvorno kodo lahko najdete v <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Za peskovnik Codex glejte [[Special:VueTest/codex]]"
+}

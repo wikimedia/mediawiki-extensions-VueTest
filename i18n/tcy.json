@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mahaveer Indra"
+		]
+	},
+	"vuetest-codex-title": "ಕೊಡೆಕ್ಸ್ ಕಲ್ಪುನ ಕಲ",
+	"vuetest-app-welcome": "Vue ಸೊಲ್ಮೆ ಪನೊಂದುಲ್ಲೆ !",
+	"vuetest-app-intro": "ಮೀಡಿಯಾವಿಕಿಡ್ Vue.jsನ್ ಎಂಚ ಗಲಸೊಲಿ ಪನ್ಪುನೆಕ್ ಕೆಲವೊಂಜಿ ಉದಾರ್ಮೆ. <code>resources/components/App.vue</code>ತ ಸೋರ್ಸ್ ಕೋಡ್ ಮುಲ್ಪ ಉಂಡು."
+}

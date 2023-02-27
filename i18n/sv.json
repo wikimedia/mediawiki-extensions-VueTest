@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"vuetest": "Vue.js-sandlåda",
+	"vuetest-desc": "Vue.js-sandlåda",
+	"vuetest-summary": "Ett ställa där man kan testa Vue.js-komponenter och MediaWiki-integration",
+	"vuetest-codex-title": "Codex-sandlåda",
+	"vuetest-app-welcome": "Hej från Vue!",
+	"vuetest-app-intro": "Nedan följer en rad exempel som visar hur Vue.js kan användas i MediaWiki. Källkoden finns på <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "För Codex-sandlådan, se [[Special:VueTest/codex]]"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"vuetest": "Vue.js 沙盒",
+	"vuetest-desc": "Vue.js 沙盒",
+	"vuetest-summary": "測試 Vue.js 組件和 MediaWiki 整合的地方",
+	"vuetest-codex-title": "Codex 沙盒",
+	"vuetest-app-welcome": "來自 Vue 的問候！",
+	"vuetest-app-intro": "以下是一系列展示如何在 MediaWiki 使用 Vue.js 的範例。原始程式碼可在 <code>resources/components/App.vue</code> 中找到。",
+	"vuetest-app-see-also": "對於 Codex 沙盒，請參閱 [[Special:VueTest/codex]]"
+}

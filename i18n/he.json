@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"vuetest": "ארגז חול של Vue.js",
+	"vuetest-desc": "ארגז חול של Vue.js",
+	"vuetest-summary": "מקום לבדוק רכיבי Vue.js ושילוב עם מדיה־ויקי",
+	"vuetest-codex-title": "ארגז חול של קודקס",
+	"vuetest-app-welcome": "שלום מ־Vue!",
+	"vuetest-app-intro": "הנה סדרה של דוגמאות להראות כיצד ניתן להשתמש ב־Vue.js במדיה־ויקי. את קוד המקור ניתן למצוא ב־<code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "עבור ארגז החול של קודקס, ר' [[Special:VueTest/codex]]"
+}
