@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"vuetest": "Vue.js-Sandbox",
+	"vuetest-desc": "Vue.js-Sandbox",
+	"vuetest-summary": "Ein Ort, um Vue.js-Komponenten und die MediaWiki-Integration zu testen",
+	"vuetest-codex-title": "Codex-Sandbox",
+	"vuetest-app-welcome": "Hallo von Vue!",
+	"vuetest-app-intro": "Nachfolgend eine Reihe von Beispielen, die zeigen, wie Vue.js in MediaWiki verwendet werden kann. Der Quellcode befindet sich in <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Für die Codex-Sandbox siehe [[Special:VueTest/codex]]"
+}

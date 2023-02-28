@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"vuetest": "Песочник на Vue.js",
+	"vuetest-desc": "Песочник на Vue.js",
+	"vuetest-summary": "Место за испробување на составниците Vue.js и вградувањето во МедијаВики",
+	"vuetest-codex-title": "Кодексен песочник",
+	"vuetest-app-welcome": "Поздрав од Vue!",
+	"vuetest-app-intro": "Подолу има низа примери кои покажуваат како Vue.js може да се употреби во МедијаВики. Изворниот код ќе го најдете на <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "За кодесниот песочник, погл. [[Special:VueTest/codex]]"
+}

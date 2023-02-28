@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"vuetest": "Sandbox Vue.js",
+	"vuetest-desc": "Sandbox Vue.js",
+	"vuetest-summary": "Miejsce do testowania komponentów Vue.js i integracji z MediaWiki",
+	"vuetest-codex-title": "Sandbox Codex'a",
+	"vuetest-app-welcome": "Hej z Vue!",
+	"vuetest-app-intro": "Poniżej znajduje się seria przykładów pokazujących, jak Vue.js może być używane w MediaWiki. Kod źródłowy można znaleźć w <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Aby zobaczyć sandbox Codex'a, przejdź do [[Special:VueTest/codex]]"
+}

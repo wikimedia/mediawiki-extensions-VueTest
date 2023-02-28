@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"vuetest": "Sabliera Vue.js",
+	"vuetest-desc": "Sabliera de Vue.js",
+	"vuetest-summary": "Un loco pro testar componentes Vue.js e integration in MediaWiki",
+	"vuetest-codex-title": "Sabliera Codex",
+	"vuetest-app-welcome": "Salute de Vue!",
+	"vuetest-app-intro": "Ecce un serie de exemplos que monstra como Vue.js pote esser usate in MediaWiki. Le codice fonte se trova in <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Pro le sabliera Codex, vide [[Special:VueTest/codex]]"
+}

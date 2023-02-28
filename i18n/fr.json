@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"vuetest": "Bac à sable de Vue.js",
+	"vuetest-desc": "Bac à sable de Vue.js",
+	"vuetest-summary": "Un endroit pour tester les composants Vue.js et l’intégration dans MediaWiki",
+	"vuetest-codex-title": "Bac à sable de Codex",
+	"vuetest-app-welcome": "Bonjour de Vue !",
+	"vuetest-app-intro": "Vous trouverez ci-dessous une série d’exemples pour montrer comment Vue.js peut être utilisé dans MediaWiki. Le code source se trouve dans <code>resources/components/App.vue</code> .",
+	"vuetest-app-see-also": "Pour le bac à sable de Codex, voir [[Special:VueTest/codex]]"
+}

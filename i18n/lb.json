@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"vuetest": "Vue.js-Sandkaul",
+	"vuetest-desc": "Vue.js-Sandkaul",
+	"vuetest-summary": "Eng Plaz fir Vue.js-Komponenten an d'MediaWiki-Integratioun ze testen",
+	"vuetest-codex-title": "Codex-Sandkaul",
+	"vuetest-app-welcome": "Moie vu Vue!",
+	"vuetest-app-intro": "Drënner sinn eng Rei Beispiller fir ze weise wéi Vue.js a MediaWiki benotzt ka ginn. De Quelltext fannt Dir an <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Fir d'Codex-Sandkaul, kuckt [[Special:VueTest/codex]]"
+}
