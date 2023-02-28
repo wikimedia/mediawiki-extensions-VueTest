@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
+			"Domo John",
 			"Kuukye",
 			"Robert"
 		]
@@ -10,6 +12,6 @@
 	"vuetest-summary": "Zie go naŋ na tɛɛse Vue. Js boma mine and Mediawiki lammo",
 	"vuetest-codex-title": "Codex sandbox",
 	"vuetest-app-welcome": "Halo ayi vue zie",
-	"vuetest-app-intro": "Ama naŋ be a puliŋ bigree lɛ Vue.js naŋ na baŋ de toŋ Toma Mediawiki. Go na baŋ bye LA a code <code>resources/components/App.vue</code>.",
-	"vuetest-app-see-also": "Ka to wa boɔrɔ Codex sandbox, nyɛ [[Special\n:VueTest/codex]]\nFollowing link is missing: [[Special:VueTest/codex]]\nKa to wa boɔrɔ Codex sandbox, nyɛ\nExplain your changes (optional)\nPublish translationSkip to next\nPress \"CTRL-ENTER\" to confirm and move to the next message, \"ALT-D\" to skip, \"ALT-B\" to provide summary or hold \"ALT\" to see other shortcuts.\nText shown at the top of Special:VueTest, pointing to"
+	"vuetest-app-intro": "Ama naŋ be a puliŋ e la damanne sugilitaa naŋ wuli lɛ Vue.js naŋ na baŋ toŋ Toma Mediawiki poɔ. Te na baŋ nyɛ la a yiziecode<code>resources/components/App.vue</code> poɔ.",
+	"vuetest-app-see-also": "Ka to wa boɔrɔ Codex sandbox, nyɛ [[Special:VueTest/codex]]"
 }
