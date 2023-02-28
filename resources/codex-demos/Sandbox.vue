@@ -341,6 +341,7 @@ const demoSections = [
 	{ name: 'Thumbnail', id: '#cdx-thumbnail' },
 	{ name: 'ToggleButton', id: '#cdx-toggle-button' },
 	{ name: 'ToggleButtonGroup', id: '#cdx-toggle-button-group' },
+	{ name: 'ToggleSwitch', id: '#cdx-toggle-switch' },
 	{ name: 'TypeaheadSearch', id: '#cdx-typeahead-search' }
 ];
 
