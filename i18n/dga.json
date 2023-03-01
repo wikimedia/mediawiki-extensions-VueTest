@@ -12,6 +12,6 @@
 	"vuetest-summary": "Zie go naŋ na tɛɛse Vue. Js boma mine and Mediawiki lammo",
 	"vuetest-codex-title": "Codex sandbox",
 	"vuetest-app-welcome": "Halo ayi vue zie",
-	"vuetest-app-intro": "Ama naŋ be a puliŋ e la damanne sugilitaa naŋ wuli lɛ Vue.js naŋ na baŋ toŋ Toma Mediawiki poɔ. Te na baŋ nyɛ la a yiziecode<code>resources/components/App.vue</code> poɔ.",
+	"vuetest-app-intro": "Ama naŋ be a puliŋ e la damanne sugilitaa naŋ wuli lɛ Vue.js naŋ na baŋ toŋ toma Mediawiki poɔ. Te na baŋ nyɛ la a yiziecode<code>resources/components/App.vue</code> poɔ.",
 	"vuetest-app-see-also": "Ka to wa boɔrɔ Codex sandbox, nyɛ [[Special:VueTest/codex]]"
 }
