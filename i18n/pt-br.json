@@ -5,5 +5,6 @@
 		]
 	},
 	"vuetest-summary": "Um lugar para testar componentes de Vue.js and integration da MediaWiki",
+	"vuetest-app-welcome": "Olá da Vue!",
 	"vuetest-app-intro": "Abaixo há uma série de exemplos mostrando como usar Vue.js na MediaWiki. O código-fonte pode ser encontrado em <code>resources/components/App.vue</code>"
 }
