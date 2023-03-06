@@ -45,6 +45,9 @@ To update the bundled JS and CSS for the Codex component demos, follow these ste
 1. Update the Codex submodule: `git submodule update --remote --merge`
 2. Run the build script: `npm run codex:build-demos`
 
+NOTE: If you run into the error `missing script: build` you are running an older version
+of Node.js. Please check the Node version requirements in package.json
+
 ### Currently supported:
 
 * Single-file Vue components using ES5 (plus require/module.exports)
