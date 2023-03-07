@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"vuetest": "Vue.js Deneme Tahtası",
+	"vuetest-desc": "Vue.js deneme tahtası",
+	"vuetest-summary": "Vue.js bileşenlerini ve MediaWiki entegrasyonunu test etmek için bir yer",
+	"vuetest-codex-title": "Codex deneme tahtası",
+	"vuetest-app-welcome": "Vue'dan merhaba!",
+	"vuetest-app-intro": "Aşağıda Vue.js'in MediaWiki'de nasıl kullanılabileceğini gösteren bir dizi örnek bulunmaktadır. Kaynak kodu, <code>resources/components/App.vue</code> içinde bulunabilir.",
+	"vuetest-app-see-also": "Codex deneme tahtası için bkz. [[Special:VueTest/codex]]"
+}

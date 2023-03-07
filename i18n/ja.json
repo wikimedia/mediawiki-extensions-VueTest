@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"もなー(偽物)"
+		]
+	},
+	"vuetest": "Vue.js サンドボックス",
+	"vuetest-desc": "Vue.js サンドボックス",
+	"vuetest-summary": "Vue.js コンポーネントの MediaWiki の統合をテスト",
+	"vuetest-app-welcome": "Hello from Vue!"
+}
