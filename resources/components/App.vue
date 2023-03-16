@@ -16,7 +16,7 @@
 		</cdx-button>
 		<cdx-button
 			action="progressive"
-			type="primary"
+			weight="primary"
 			@click="increase"
 		>
 			<cdx-icon :icon="cdxIconAdd"></cdx-icon>
