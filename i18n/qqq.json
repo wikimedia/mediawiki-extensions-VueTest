@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Your Name"
+			"Eric Gardner",
+			"Roan Kattouw"
 		]
 	},
 	"vuetest": "The name of the extension's special page in Special:SpecialPages",

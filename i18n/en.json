@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Your Name"
+			"Eric Gardner",
+			"Roan Kattouw"
 		]
 	},
 	"vuetest": "Vue.js Sandbox",
