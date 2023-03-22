@@ -1,0 +1,27 @@
+<div class="ext-vuetest-css">
+	<main class="ext-vuetest-css__content">
+		{{>CssButtonDemo}}
+		{{>CssCheckboxDemo}}
+		{{>CssIconDemo}}
+		{{>LinkDemo}}
+		{{>CssMessageDemo}}
+		{{>CssRadioDemo}}
+		{{>CssSearchInputDemo}}
+		{{>CssSelectDemo}}
+		{{>CssTextInputDemo}}
+	</main>
+
+	<nav class="ext-vuetest-css__nav">
+		<div class="ext-vuetest-css__nav__inner">
+			<ul>
+				{{#sections}}
+					<li>
+						<a href="#ext-vuetest-css-{{ machine-name }}">
+							{{ name }}
+						</a>
+					</li>
+				{{/sections}}
+			</ul>
+		</div>
+	</nav>
+</div>
