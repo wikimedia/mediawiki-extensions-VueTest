@@ -44,8 +44,7 @@ class SpecialVueTest extends \SpecialPage {
 		} elseif ( $sub === 'codex/css' ) {
 			$out->setPageTitle( $this->msg( 'vuetest-codex-css-title' ) );
 			$out->addSubtitle( '&lt; ' . $this->getLinkRenderer()->makeLink( $this->getPageTitle() ) );
-			// TODO: When Codex styles are available as a module, use those instead.
-			$out->addModules( '@wikimedia/codex' );
+			$out->addModuleStyles( [ 'codex-styles' ] );
 			$out->addModuleStyles( [ 'ext.vueTest.codexcssdemo' ] );
 
 			$data = [
