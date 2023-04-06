@@ -1,14 +1,16 @@
 {
 	"name": "VueTest",
 	"author": [
-		"Eric Gardner"
+		"Eric Gardner",
+		"Roan Kattouw",
+		"Anne Tomasevich"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:VueTest",
 	"descriptionmsg": "vuetest-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.32.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\VueTest\\": "includes/"
@@ -110,6 +112,13 @@
 				"vue"
 			],
 			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.vueTest.codexcssdemo": {
+			"styles": "codex-css-demos/styles.less",
 			"targets": [
 				"desktop",
 				"mobile"

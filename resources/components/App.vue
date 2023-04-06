@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<div v-i18n-html:vuetest-app-see-also class="mw-vuetest__see-also"></div>
-
 		<!-- i18n messages can be used like this:-->
 		<h2>{{ $i18n( 'vuetest-app-welcome' ) }}</h2>
 		<p v-i18n-html:vuetest-app-intro></p>
@@ -69,12 +67,3 @@ module.exports = exports = {
 };
 
 </script>
-
-<style lang="less">
-.mw-vuetest {
-	&__see-also {
-		padding-left: 1em;
-		font-style: italic;
-	}
-}
-</style>
