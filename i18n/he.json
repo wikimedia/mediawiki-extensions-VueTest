@@ -8,7 +8,9 @@
 	"vuetest-desc": "ארגז חול של Vue.js",
 	"vuetest-summary": "מקום לבדוק רכיבי Vue.js ושילוב עם מדיה־ויקי",
 	"vuetest-codex-title": "ארגז חול של קודקס",
+	"vuetest-codex-css-title": "רכיבי קודקס עבור CSS בלבד",
 	"vuetest-app-welcome": "שלום מ־Vue!",
 	"vuetest-app-intro": "הנה סדרה של דוגמאות להראות כיצד ניתן להשתמש ב־Vue.js במדיה־ויקי. את קוד המקור ניתן למצוא ב־<code>resources/components/App.vue</code>.",
-	"vuetest-app-see-also": "עבור ארגז החול של קודקס, ר' [[Special:VueTest/codex]]"
+	"vuetest-app-see-also": "עבור ארגז החול של קודקס, ר' [[Special:VueTest/codex]].",
+	"vuetest-app-see-also-css": "לרכיבי קודקס עבור CSS בלבד, ר' [[Special:VueTest/codex/css]]."
 }
