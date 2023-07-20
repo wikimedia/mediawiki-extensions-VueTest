@@ -4,5 +4,10 @@
 			"Jon Harald Søby"
 		]
 	},
-	"vuetest-app-welcome": "Hei fra Vue!"
+	"vuetest": "Vue.js-sandkasse",
+	"vuetest-desc": "Vue.js-sandkasse",
+	"vuetest-summary": "Et sted å teste ut Vue.js-komponenter og MediaWiki-integrasjon",
+	"vuetest-codex-title": "Codex-sandkasse",
+	"vuetest-app-welcome": "Hei fra Vue!",
+	"vuetest-app-intro": "Nedenfor er en rekke eksempler på hvordan Vue.js kan brukes i MediaWiki. Kildekoden kan man finne i <code>resources/components/App.vue</code>."
 }
