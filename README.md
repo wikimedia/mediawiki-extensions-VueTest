@@ -24,7 +24,7 @@ Once set up, running `npm test` and `composer test` will run automated code chec
 
 This extension adds a new special page, `Special:VueTest`. This page contains
 several interactive demos to showcase some of what you can do with Vue, as well as
-how this tool can be integrated in a MediaWiki envirionment.
+how this tool can be integrated in a MediaWiki environment.
 
 ## Codex Demos
 
