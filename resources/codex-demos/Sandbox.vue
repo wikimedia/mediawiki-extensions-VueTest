@@ -54,8 +54,8 @@
 				<section id="cdx-checkbox">
 					<h2>Checkbox</h2>
 					<div>
-						<h3>Single Checkbox</h3>
-						<checkbox-single></checkbox-single>
+						<h3>Single checkbox with description</h3>
+						<checkbox-with-description></checkbox-with-description>
 						<h3>Checkbox Group</h3>
 						<checkbox-group></checkbox-group>
 						<h3>Inline Checkbox</h3>
@@ -252,8 +252,6 @@
 					<div>
 						<h3>Single toggle button</h3>
 						<toggle-button-single></toggle-button-single>
-						<h3>Toggle icon button</h3>
-						<toggle-icon-button></toggle-icon-button>
 						<h3>Toggle icon-only button</h3>
 						<toggle-icon-only-button></toggle-icon-only-button>
 					</div>
@@ -280,10 +278,10 @@
 				<section id="cdx-toggle-switch">
 					<h2>Toggle Switch</h2>
 					<div>
-						<h3>Single switch</h3>
-						<toggle-switch-single></toggle-switch-single>
-						<h3>Single switch with label</h3>
-						<toggle-switch-with-label></toggle-switch-with-label>
+						<h3>Single switch with description</h3>
+						<toggle-switch-with-description></toggle-switch-with-description>
+						<h3>Switch group</h3>
+						<toggle-switch-group></toggle-switch-group>
 					</div>
 				</section>
 
@@ -364,10 +362,10 @@ module.exports = {
 		CardWithThumbnail: Demos.CardWithThumbnail,
 		CardWithThumbnailTitleOnly: Demos.CardWithThumbnailTitleOnly,
 		CardGroupWithThumbnails: Demos.CardGroupWithThumbnails,
-		CheckboxSingle: Demos.SingleCheckbox,
 		CheckboxGroup: Demos.CheckboxGroup,
 		CheckboxInline: Demos.InlineCheckboxes,
 		CheckboxIndeterminate: Demos.IndeterminateState,
+		CheckboxWithDescription: Demos.CheckboxWithDescription,
 		ComboboxBasic: Demos.ComboboxBasic,
 		ComboboxClearableStartIcon: Demos.ComboboxClearableStartIcon,
 		ComboboxComplexMenuItem: Demos.ComboboxComplexMenuItem,
@@ -427,7 +425,6 @@ module.exports = {
 		ThumbnailDefault: Demos.ThumbnailDefault,
 		ThumbnailCustomIcon: Demos.ThumbnailCustomIcon,
 		ToggleButtonSingle: Demos.ToggleSingleButton,
-		ToggleIconButton: Demos.ToggleIconButton,
 		ToggleIconOnlyButton: Demos.ToggleIconOnlyButton,
 		ToggleButtonGroupSingleValue: Demos.SingleValueToggleButtonGroup,
 		ToggleButtonGroupInitialSelection: Demos.InitiallySelectedSingleValueToggleButtonGroup,
@@ -435,8 +432,8 @@ module.exports = {
 		ToggleButtonGroupDisabled: Demos.DisabledButtonGroup,
 		ToggleButtonGroupMaximum: Demos.MaximumToggleButtonGroup,
 		ToggleButtonGroupWithSlot: Demos.ToggleButtonGroupWithSlot,
-		ToggleSwitchSingle: Demos.SingleSwitch,
-		ToggleSwitchWithLabel: Demos.SingleSwitchWithLabel,
+		ToggleSwitchGroup: Demos.SwitchGroup,
+		ToggleSwitchWithDescription: Demos.SwitchWithDescription,
 		TypeaheadSearchWikipedia: Demos.TypeaheadSearchWikipedia,
 		TypeaheadSearchWikidata: Demos.TypeaheadSearchWikidata,
 		TypeaheadSearchInitialValue: Demos.TypeaheadSearchInitialValue,
