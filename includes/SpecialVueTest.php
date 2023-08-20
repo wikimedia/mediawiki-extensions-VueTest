@@ -7,7 +7,7 @@
 
 namespace MediaWiki\Extension\VueTest;
 
-use TemplateParser;
+use MediaWiki\Html\TemplateParser;
 
 class SpecialVueTest extends \SpecialPage {
 
