@@ -261,17 +261,28 @@
 					<h2>Toggle button group</h2>
 					<div>
 						<h3>Single Value</h3>
-						<toggle-button-group-single-value></toggle-button-group-single-value>
+						<toggle-button-group-single-value>
+						</toggle-button-group-single-value>
+
 						<h3>Single Value, with initial selection</h3>
-						<toggle-button-group-initial-selection></toggle-button-group-initial-selection>
+						<toggle-button-group-initial-selection>
+						</toggle-button-group-initial-selection>
+
 						<h3>Multiple Value</h3>
-						<toggle-button-group-multi-value></toggle-button-group-multi-value>
+						<toggle-button-group-multi-value>
+						</toggle-button-group-multi-value>
+
 						<h3>Disabled</h3>
-						<toggle-button-group-disabled></toggle-button-group-disabled>
+						<toggle-button-group-disabled>
+						</toggle-button-group-disabled>
+
 						<h3>Maximum</h3>
-						<toggle-button-group-maximum></toggle-button-group-maximum>
+						<toggle-button-group-maximum>
+						</toggle-button-group-maximum>
+
 						<h3>With slot</h3>
-						<toggle-button-group-with-slot></toggle-button-group-with-slot>
+						<toggle-button-group-with-slot>
+						</toggle-button-group-with-slot>
 					</div>
 				</section>
 
@@ -318,7 +329,7 @@
 </template>
 
 <script>
-const Demos = require( './codex-demos.umd.js' );
+const Demos = require( './codex-demos.js' );
 const demoSections = [
 	{ name: 'Button', id: '#cdx-button' },
 	{ name: 'ButtonGroup', id: '#cdx-button-group' },

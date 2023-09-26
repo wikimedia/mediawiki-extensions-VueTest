@@ -83,7 +83,7 @@
 			"packageFiles": [
 				"init.js",
 				"Sandbox.vue",
-				"codex-demos.umd.js",
+				"codex-demos.js",
 				{
 					"name": "icons.json",
 					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
