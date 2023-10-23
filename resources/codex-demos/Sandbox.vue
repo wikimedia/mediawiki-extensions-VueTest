@@ -462,13 +462,10 @@ module.exports = {
 </script>
 
 <style lang="less">
-@import ( reference ) '../../../../resources/lib/codex-design-tokens/theme-wikimedia-ui.less';
-// TODO: Improve that import path.
-
-@border-base: @border-width-base @border-style-base @border-color-base;
+// To access Codex design tokens and mixins inside Vue files, import MediaWiki skin variables.
+@import 'mediawiki.skin.variables.less';
 
 // Define some sandbox-specific values
-@sandbox-breakpoint-tablet: 768px;
 @sandbox-header-height: 2em;
 @sandbox-sidebar-width: 20rem;
 
@@ -511,7 +508,7 @@ html {
 		justify-content: space-between;
 		padding: @spacing-100;
 
-		@media ( min-width: @sandbox-breakpoint-tablet ) {
+		@media ( min-width: @min-width-breakpoint-tablet ) {
 			flex-direction: row;
 		}
 
@@ -548,7 +545,7 @@ html {
 		order: -1;
 		margin-bottom: @spacing-200;
 
-		@media ( min-width: @sandbox-breakpoint-tablet ) {
+		@media ( min-width: @min-width-breakpoint-tablet ) {
 			flex: 0 0 auto;
 			flex-direction: row;
 			padding-right: @spacing-200;
