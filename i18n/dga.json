@@ -6,7 +6,8 @@
 			"Kuukye",
 			"Robert",
 			"Suuribaarɛɛ",
-			"Linus Konkor"
+			"Linus Konkor",
+			"Joachim Yirkang"
 		]
 	},
 	"vuetest": "Vue.js Tɛnedaga",
@@ -17,5 +18,5 @@
 	"vuetest-app-welcome": "Halo ayi vue zie",
 	"vuetest-app-intro": "Ama naŋ be a puliŋ e la damanne sugilitaa naŋ wuli lɛ Vue.js naŋ na baŋ toŋ toma Mediawiki poɔ. Te na baŋ nyɛ la a yiziecode<code>resources/components/App.vue</code> poɔ.",
 	"vuetest-app-see-also": "Ka fo wa boɔrɔ Codex sandbox, nyɛ [[Special:VueTest/codex]]",
-	"vuetest-app-see-also-css": "Ko Codex CSS-yoŋ kpɛŋkpɛlɛma,nyɛ [[Special\n:VueTest/codex/css]]."
+	"vuetest-app-see-also-css": "Ko Codex CSS-yoŋ kpɛŋkpɛlɛma,nyɛ [[Special:VueTest/codex/css]]."
 }
