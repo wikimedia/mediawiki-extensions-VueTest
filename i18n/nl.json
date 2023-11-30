@@ -5,11 +5,11 @@
 			"McDutchie"
 		]
 	},
-	"vuetest": "Vue.js-zandbak",
-	"vuetest-desc": "Vue.js-zandbak",
+	"vuetest": "Vue.js-kladblok",
+	"vuetest-desc": "Vue.js-kladblok",
 	"vuetest-summary": "Een plek om Vue.js-componenten en MediaWiki-integratie te testen",
-	"vuetest-codex-title": "Codex-zandbak",
+	"vuetest-codex-title": "Codex-kladblok",
 	"vuetest-app-welcome": "Hallo van Vue!",
 	"vuetest-app-intro": "Hieronder vindt u een reeks voorbeelden om te laten zien hoe Vue.js kan worden gebruikt in MediaWiki. De broncode is te vinden in <code>resources/components/App.vue</code> .",
-	"vuetest-app-see-also": "Voor de Codex-zandbak, zie [[Special:VueTest/codex]]."
+	"vuetest-app-see-also": "Voor het kladblok van Codex, zie [[Special:VueTest/codex]]."
 }
