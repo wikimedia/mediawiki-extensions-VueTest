@@ -8,8 +8,9 @@
 namespace MediaWiki\Extension\VueTest;
 
 use MediaWiki\Html\TemplateParser;
+use MediaWiki\SpecialPage\SpecialPage;
 
-class SpecialVueTest extends \SpecialPage {
+class SpecialVueTest extends SpecialPage {
 
 	/**
 	 * @var TemplateParser
