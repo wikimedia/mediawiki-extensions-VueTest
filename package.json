@@ -8,7 +8,7 @@
 		"codex:build-demos": "[ -d lib/codex ] && npm run codex:build-demos:main || echo 'Exiting. Please see README instructions to run this command.'",
 		"codex:build-demos:main": "cd lib/codex && npm install && npm run doc && cd ../.. && npm run codex:copy-demos",
 		"codex:copy-demos": "npm run codex:copy-demos-js && npm run codex:copy-demos-css",
-		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.js resources/codex-demos/codex-demos.js",
+		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.cjs resources/codex-demos/codex-demos.js",
 		"codex:copy-demos-css": "copyfiles -f lib/codex/packages/codex-docs/dist/codex-demos*.css resources/codex-demos"
 	},
 	"devDependencies": {
