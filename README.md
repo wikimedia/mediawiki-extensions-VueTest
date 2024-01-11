@@ -51,7 +51,7 @@ of Node.js. Please check the Node version requirements in package.json
 ### Currently supported:
 
 * Single-file Vue components using ES5 (plus require/module.exports)
-* Vue 3 (using the compatibility build)
+* Vue 3
 * ES6 in component files (except for `import` and `export`)
 * Use of the new [Codex](https://doc.wikimedia.org/codex/main/) component library
 * Linting JS, CSS/LESS, and HTML in .vue files
