@@ -43,11 +43,7 @@
 			"scripts": [
 				"init.js"
 			],
-			"es6": true,
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"es6": true
 		},
 		"ext.vueTest.components": {
 			"dependencies": [
@@ -70,11 +66,7 @@
 					]
 				}
 			],
-			"es6": true,
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"es6": true
 		},
 		"ext.vueTest.codexdemo": {
 			"class": "MediaWiki\\ResourceLoader\\CodexModule",
@@ -111,18 +103,10 @@
 			"dependencies": [
 				"vue"
 			],
-			"es6": true,
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"es6": true
 		},
 		"ext.vueTest.codexcssdemo": {
-			"styles": "codex-css-demos/styles.less",
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"styles": "codex-css-demos/styles.less"
 		}
 	},
 	"manifest_version": 2
