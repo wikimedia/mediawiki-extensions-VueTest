@@ -42,8 +42,7 @@
 			"styles": [],
 			"scripts": [
 				"init.js"
-			],
-			"es6": true
+			]
 		},
 		"ext.vueTest.components": {
 			"dependencies": [
@@ -65,8 +64,7 @@
 						"cdxIconAdd"
 					]
 				}
-			],
-			"es6": true
+			]
 		},
 		"ext.vueTest.codexdemo": {
 			"class": "MediaWiki\\ResourceLoader\\CodexModule",
@@ -102,8 +100,7 @@
 			"noflip": true,
 			"dependencies": [
 				"vue"
-			],
-			"es6": true
+			]
 		},
 		"ext.vueTest.codexcssdemo": {
 			"styles": "codex-css-demos/styles.less"
