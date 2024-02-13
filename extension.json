@@ -65,45 +65,6 @@
 					]
 				}
 			]
-		},
-		"ext.vueTest.codexdemo": {
-			"class": "MediaWiki\\ResourceLoader\\CodexModule",
-			"localBasePath": "resources/codex-demos",
-			"remoteExtPath": "VueTest/resources/codex-demos",
-			"packageFiles": [
-				"init.js",
-				"Sandbox.vue",
-				"codex-demos.js",
-				{
-					"name": "icons.json",
-					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
-					"callbackParam": [
-						"cdxIconArrowNext",
-						"cdxIconBold",
-						"cdxIconRobot",
-						"cdxIconTrash",
-						"cdxIconPause",
-						"cdxIconPlay"
-					]
-				}
-			],
-			"themeStyles": {
-				"wikimedia-ui": {
-					"ltr": "codex-demos.style.css",
-					"rtl": "codex-demos.style-rtl.css"
-				},
-				"wikimedia-ui-legacy": {
-					"ltr": "codex-demos.style-legacy.css",
-					"rtl": "codex-demos.style-legacy-rtl.css"
-				}
-			},
-			"noflip": true,
-			"dependencies": [
-				"vue"
-			]
-		},
-		"ext.vueTest.codexcssdemo": {
-			"styles": "codex-css-demos/styles.less"
 		}
 	},
 	"manifest_version": 2
