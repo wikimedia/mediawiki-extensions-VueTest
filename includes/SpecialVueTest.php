@@ -38,12 +38,12 @@ class SpecialVueTest extends SpecialPage {
 		$out = $this->getOutput();
 
 		if ( $sub === 'codex' ) {
-			$out->setPageTitle( $this->msg( 'vuetest-codex-title' ) );
+			$out->setPageTitleMsg( $this->msg( 'vuetest-codex-title' ) );
 			$out->addSubtitle( '&lt; ' . $this->getLinkRenderer()->makeLink( $this->getPageTitle() ) );
 			$out->addModules( 'ext.vueTest.codexdemo' );
 			$out->addHTML( $this->templateParser->processTemplate( 'VueRoot', [] ) );
 		} elseif ( $sub === 'codex/css' ) {
-			$out->setPageTitle( $this->msg( 'vuetest-codex-css-title' ) );
+			$out->setPageTitleMsg( $this->msg( 'vuetest-codex-css-title' ) );
 			$out->addSubtitle( '&lt; ' . $this->getLinkRenderer()->makeLink( $this->getPageTitle() ) );
 			$out->addModuleStyles( [ 'codex-styles' ] );
 			$out->addModuleStyles( [ 'ext.vueTest.codexcssdemo' ] );
@@ -64,7 +64,7 @@ class SpecialVueTest extends SpecialPage {
 			$templateHtml = $this->templateParser->processTemplate( 'AllCssComponents', $data );
 			$out->addHTML( $templateHtml );
 		} else {
-			$out->setPageTitle( $this->msg( 'vuetest' ) );
+			$out->setPageTitleMsg( $this->msg( 'vuetest' ) );
 			$out->addSubtitle( $this->msg( 'vuetest-summary' )->escaped() );
 			$out->addModules( 'ext.vueTest' );
 			$out->addHTML( '<h2>Codex components</h2>' );
