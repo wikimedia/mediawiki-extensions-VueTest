@@ -4,12 +4,16 @@
 			"Kuukye",
 			"Robert",
 			"Amire80",
-			"Domo John"
+			"Domo John",
+			"Joachim Yirkang",
+			"Linus Konkor",
+			"Reedy",
+			"Suuribaarɛɛ"
 		]
 	},
 	"vuetest": "Vue.js Tɛnedaga",
 	"vuetest-desc": "Vue.js. tɛnedaga",
-	"vuetest-summary": "Zie go naŋ na tɛɛse Vue. Js boma mine and Mediawiki lammo",
+	"vuetest-summary": "Zie go naŋ na tɛɛse Vue. Js boma mine and MediaWiki lammo",
 	"vuetest-codex-title": "Codex sandbox",
 	"vuetest-app-welcome": "Halo ayi vue zie",
 	"vuetest-app-intro": "Ama naŋ be a puliŋ e la damanne sugilitaa naŋ wuli lɛ Vue.js naŋ na baŋ toŋ toma Mediawiki poɔ. Te na baŋ nyɛ la a yiziecode<code>resources/components/App.vue</code> poɔ.",
