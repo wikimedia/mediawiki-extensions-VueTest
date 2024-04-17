@@ -7,7 +7,7 @@ VueTestUtils.config.global.mocks = {
 
 VueTestUtils.config.global.directives = {
 	'i18n-html': ( el, binding ) => {
-		el.innerHTML = `${binding.arg} (${binding.value})`;
+		el.innerHTML = `${ binding.arg } (${ binding.value })`;
 	}
 };
 
