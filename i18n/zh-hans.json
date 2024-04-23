@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jbyccc"
+			"Jbyccc",
+			"沈澄心"
 		]
 	},
-	"vuetest-app-welcome": "欢迎来到Vue！"
+	"vuetest": "Vue.js沙盒",
+	"vuetest-desc": "Vue.js沙盒",
+	"vuetest-summary": "测试Vue.js组件和MediaWiki集成的地方",
+	"vuetest-codex-title": "Codex沙盒",
+	"vuetest-app-welcome": "欢迎来到Vue！",
+	"vuetest-app-intro": "以下是一系列展示如何在MediaWiki使用Vue.js的示例。源代码可以在<code>resources/components/App.vue</code>中找到。"
 }
