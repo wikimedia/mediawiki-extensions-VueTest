@@ -16,7 +16,7 @@
 		"@vue/compiler-sfc": "3.3.9",
 		"@vue/test-utils": "^2.0.0",
 		"@vue/vue3-jest": "27.0.0-alpha.4",
-		"@wikimedia/codex": "1.4.0",
+		"@wikimedia/codex": "1.5.0",
 		"copyfiles": "^2.4.1",
 		"eslint-config-wikimedia": "0.27.0",
 		"eslint-plugin-jest": "^25.7.0",
