@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"vuetest": "Zona de probas de Vue.js",
+	"vuetest-desc": "Zona de probas de Vue.js",
+	"vuetest-summary": "Un lugar para probar os compoñentes de Vue.js e a súa integración con MediaWiki",
+	"vuetest-codex-title": "Zona de probas de código",
+	"vuetest-codex-css-title": "Compoñentes unicamente CSS de Codex",
+	"vuetest-app-welcome": "Saúdos desde Vue!",
+	"vuetest-app-intro": "Abaixo amósanse varios exemplos para demostrar como se pode usar Vue.js en MediaWiki. O código fonte pódese atopar en <code>resources/components/App.vue</code>.",
+	"vuetest-app-see-also": "Para a zona de probas de Codex, vai a [[Special:VueTest/codex]].",
+	"vuetest-app-see-also-css": "Para os compoñentes unicamente CSS de Codex, vai a [[Special:VueTest/codex/css]]."
+}
