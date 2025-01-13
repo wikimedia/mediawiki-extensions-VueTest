@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"vuetest": "بيئة Vue.js",
+	"vuetest-desc": "بيئة عمل Vue.js",
+	"vuetest-summary": "مكان لاختبار مكونات Vue.js وتكامل MediaWiki",
+	"vuetest-codex-title": "صندوق رمل الكودكس",
+	"vuetest-app-welcome": "مرحبا من فيو!",
+	"vuetest-app-intro": "فيما يلي سلسلة من الأمثلة لتوضيح كيفية استخدام Vue.js في MediaWiki. يمكن العثور على الكود المصدر في <code>resources/components/App.vue</code> ."
+}
