@@ -42,7 +42,7 @@ class SpecialVueTest extends SpecialPage {
 		$out->addHTML( $this->templateParser->processTemplate( 'VueRoot', [] ) );
 	}
 
-	// phpcs:ignore
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'other';
 	}
