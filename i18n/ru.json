@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Engineer56"
+		]
+	},
+	"vuetest": "Песочница Vue.js",
+	"vuetest-desc": "Vue.js sandbox",
+	"vuetest-summary": "Место для тестирования компонентов Vue.js и интеграции MediaWiki",
+	"vuetest-codex-title": "Песочница Кодекса",
+	"vuetest-app-welcome": "Привет от Vue!",
+	"vuetest-app-intro": "Ниже приведен ряд примеров, показывающих, как Vue.js может использоваться в MediaWiki. Исходный код можно найти в <code>resources/components/App.vue</code>."
+}
